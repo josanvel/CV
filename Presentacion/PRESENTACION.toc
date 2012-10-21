@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.22pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduccion}{4}{0}{1}
+\beamer@subsectionintoc {1}{1}{Vision}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Objetivos}{5}{0}{1}
+\beamer@sectionintoc {2}{Contribucion}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Servicios}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{Informaciones}{11}{0}{2}
