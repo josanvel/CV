@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo4" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/NewNote" />
+
+    <Button
+        android:id="@+id/B_atras"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="118dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/atras" 
+        android:textColor="#ff0000"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/B_aceptar"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/B_atras"
+        android:layout_alignBottom="@+id/B_atras"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="21dp"
+        android:text="@string/aceptar" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="text" />
+
+</RelativeLayout>
