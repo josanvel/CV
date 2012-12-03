@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="460dp"
+    android:background="@drawable/fmainprincipal" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/Menu"
+        android:textColor="#0000ff"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/B_NewNote"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="42dp"
+        android:text="@string/NewNote"
+        android:textColor="#00ff00"
+        android:textStyle="bold"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/B_ViewNote"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/B_NewNote"
+        android:layout_marginTop="48dp"
+        android:text="@string/btnViewNote"
+        android:textColor="#00ff00"
+        android:textStyle="bold" 
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/B_PageSave"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/B_ViewNote"
+        android:layout_marginTop="46dp"
+        android:text="@string/btnPageSave"
+        android:textColor="#00ff00"
+        android:textStyle="bold"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/B_Exit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/btnExit"
+        android:textColor="#ff0000"
+        android:textStyle="bold" 
+        android:onClick="onClick"/>
+
+</RelativeLayout>
+</ScrollView>
