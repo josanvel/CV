@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="477dp"
+    android:background="@drawable/fnewnote" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:textColor="#0000ff"
+        android:text="@string/NewNote" />
+
+    <EditText
+        android:id="@+id/txt_Note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="NEW NOTE"
+        android:inputType="text" 
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txt_Note"
+        android:layout_below="@+id/txt_Note"
+        android:layout_marginTop="20dp"
+        android:entries="@array/prioritiesCategory" />
+
+    <Spinner
+        android:id="@+id/searcher"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/category"
+        android:layout_below="@+id/category"
+        android:layout_marginTop="54dp"
+        android:entries="@array/prioritiesSearch" />
+
+    <TextView
+        android:id="@+id/lb_MensajeNewNote"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/searcher"
+        android:layout_alignRight="@+id/searcher"
+        android:layout_below="@+id/searcher"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/srt_mensajeNN" />
+
+    <Button
+        android:id="@+id/B_BackNN"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lb_MensajeNewNote"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/B_SaveNN"
+        android:onClick="onClick"
+        android:text="@string/btnBack"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/B_SaveNN"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/B_BackNN"
+        android:layout_alignBottom="@+id/B_BackNN"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="32dp"
+        android:onClick="onClick"
+        android:text="@string/btnSave"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+</ScrollView>
